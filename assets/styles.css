@@ -53,25 +53,40 @@ section.jumbotron img {
     margin-bottom: 1em;
 }
 
-section.jumbotron div {
-    text-align: center;
+section.jumbotron {
+    background-color: lavender;
 }
 
-section.jumbotron div span {
-    padding: 1em;
+section.jumbotron div.center {
+    width: 50%;
+    margin: auto;
+
+}
+
+section.jumbotron div div.span {
+    text-align: left;
+}
+
+section.jumbotron div div span {
+    padding: 5px;
     background-color: #7A52BB;
-    border-radius: 5em;
+    border-radius: 4em;
+    font-size: 15px;
     font-weight: 500;
 }
 
-section.jumbotron div h1 {
-    font-size: 3em;
-    line-height: 2em;
+section.jumbotron div.conoce {
+    text-align: center;
 }
 
-section.jumbotron div p {
-    font-size: 1.5em;
-    line-height: 1.5;
+section.jumbotron div.conoce h1 {
+    font-size: 35px;
+    line-height: 40px;
+}
+
+section.jumbotron div.conoce p {
+    font-size: 18px;
+    line-height: 25px;
 }
 
 #email {
@@ -79,6 +94,33 @@ section.jumbotron div p {
     padding: 1em 2em;
     margin: 2em 2em;
     width: 50%;
+    font-size: 15px;
+    border-color: black;
+    border-style: ridge;
+    background-color: lavender;
+}
+
+#submit {
+    border-radius: 5px;
+    padding: 1em 2em;
+    margin-bottom: 1em;
+    font-size: 15px;
+    border-style: ridge;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    background-color: lavender;
+}
+
+#email:hover {
+    border-style: ridge;
+    border-color: #FF2157;
+    background-color: lavender;
+}
+
+#submit:hover {
+    cursor: pointer;
+    border-color: #FF2157;
+
 }
 
 section.product {
@@ -89,8 +131,27 @@ section.product {
     header nav div:first-child {
         flex-direction: row;
     }
-    nav a{
-        font-size: 20px;
+
+}
+
+@media (min-width: 900px) {
+
+    nav a {
+        font-size: 17px;
+    }
+
+    section.jumbotron div div span {
+        font-size: 17px;
+    }
+
+    section.jumbotron div.conoce h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    section.jumbotron div.conoce p {
+        font-size: 23px;
+        line-height: 30px;
     }
 
 }
