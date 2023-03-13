@@ -98,7 +98,7 @@ section.jumbotron div.conoce p {
     width: 50%;
     font-size: 15px;
     border: 2px solid black;
-    background-color: lavender;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.555);
 }
 
 #submit {
@@ -109,11 +109,11 @@ section.jumbotron div.conoce p {
     border: 2px solid black;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
-    background-color: lavender;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.555);
 }
 
 section.jumbotron div.conoce #email:hover {
-    background-color: lavender;
     box-shadow: 0 4px 8px 0 #FF2157;
     border-color: #FF2157;
 }
@@ -122,7 +122,6 @@ section.jumbotron div.conoce #email:hover {
     cursor: pointer;
     border-color: #FF2157;
     box-shadow: 0 4px 8px 0 #FF2157;
-    background-color: lavender;
 }
 
 section.product {
@@ -149,7 +148,7 @@ section.product div.articles article {
     margin: 5px 5px 2em 5px;
     padding: 5px;
     width: 275px;
-    box-shadow: 0 4px 8px 0 black;
+    box-shadow: 0 6px 12px 0 black;
 }
 
 section.product div.articles img {
@@ -228,20 +227,19 @@ section.help div.consulta button {
     font-size: 15px;
     font-weight: 500;
     border: 2px solid black;
-    background-color: lavender;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.555);
 }
 
 section.help div.consulta button:hover {
     cursor: pointer;
     border-color: #FF2157;
     box-shadow: 0 4px 8px 0 #FF2157;
-    background-color: lavender;
 }
 
 footer {
     background-color: black;
     color: gray;
-
 }
 
 footer div.redes {
@@ -298,6 +296,7 @@ main.login form#login input {
     font-weight: 500;
     border: 2px solid black;
     background-color: lavender;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.555);
 }
 
 main.login form#login input:hover {
@@ -316,6 +315,7 @@ main.login button#sendlogin {
     font-weight: 700;
     border: 2px solid black;
     background-color: lavender;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.555);
 }
 
 main.login button#sendlogin:hover {
