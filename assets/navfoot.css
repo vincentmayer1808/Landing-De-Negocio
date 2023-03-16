@@ -16,14 +16,14 @@ div.ardi img {
     margin: 1vh 2vw 1vh 0;
 }
 
-div.ardi {
+div.ardi div:first-child {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-div.ardi a {
-    color: lavender;
+div.ardi a.name {
+    color: white;
     text-decoration: none;
     font-size: 30px;
     font-family: 'Dancing Script', cursive;
@@ -34,37 +34,8 @@ div.ardi a:hover {
     transition-duration: 300ms;
 }
 
-div.dropdown button {
-    padding-left: 1em;
-    display: block;
+div.dropdown {
     position: relative;
-    border: 0 solid transparent;
-    color: white;
-    font-size: 17px;
-    cursor: pointer;
-    background-color: black;
-}
-
-div.dropdown button:hover{
-    color: #FF2157;
-    transition-duration: 300ms;
-}
-
-nav {
-    display: none;
-    padding: 1em;
-}
-
-header nav div:first-child {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 1em;
-}
-
-header nav div:last-child {
-    padding-top: 1em;
-    text-align: right;
 }
 
 nav a {
@@ -117,38 +88,50 @@ footer div.link div {
     padding: 1em 2em;
 }
 
-@media (max-width: 699px) {
+@media (max-width: 749px) {
 
-    div.dropdown:hover nav {
+    header div.dropdown div:last-child {
+        display: none;
+    }
+
+    div.dropdown:hover div:last-child {
         transition-duration: 300ms;
         display: block;
         position: absolute;
         background-color: black;
         box-shadow: 0 8px 16px 0 black;
+        font-size: 17px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1em;
+        padding: 1em;
     }
 
 }
 
-@media (min-width: 700px) {
+@media (min-width: 750px) {
 
-    header {
+    header div.ardi {
+        width: 100%;
+        display: flex;
         justify-content: space-between;
     }
 
-    nav {
+    header div div:last-child{
+        display: block;
+    }
+
+    header div div nav{
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: right;
-        gap: 1vh;
-    }
-
-    div.dropdown button {
-        display: none;
-    }
-
-    header nav div:first-child {
-        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+        padding-top: 1.8em;
     }
 
     footer div.link {
@@ -158,8 +141,9 @@ footer div.link div {
     }
 
 }
+
 @media (min-width: 1000px) {
-    
+
     footer {
         display: flex;
         justify-content: space-between;
